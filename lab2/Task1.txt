@@ -1,0 +1,9 @@
+The system should allow Office Manager to register Dentists.
+The system should record the Specialization.
+The system should allow Office Manager to enroll Patients.
+The system should allow Patients to view(include the dentist's information)/request/cancel/change their appointments.
+The system should allow Office Manager to list/book/record the appointments.
+The system should allow Office Manager to send a confirmation email to the Patient with the appointment.
+The system should allow user to able to sign-in.
+The system should allow Dentist to see(include the patient's information) a list of all their appointments.
+The system should provide information about Surgeries.
