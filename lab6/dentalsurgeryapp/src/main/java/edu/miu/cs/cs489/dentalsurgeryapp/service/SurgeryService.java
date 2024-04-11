@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface SurgeryService {
     Surgery addNewSurgery(Surgery newSurgery);
+    Surgery getSurgeryById(Integer surgeryId);
     Surgery updateSurgery(Surgery surgery);
     List<Surgery> getAllSurgery();
     void deleteSurgeryById(Integer surgeryId);

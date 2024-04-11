@@ -19,6 +19,11 @@ public class SurgeryServiceImpl implements SurgeryService {
     }
 
     @Override
+    public Surgery getSurgeryById(Integer surgeryId) {
+        return surgeryRepository.findById(surgeryId).orElse(null);
+    }
+
+    @Override
     public Surgery updateSurgery(Surgery surgery) {
         return surgeryRepository.save(surgery);
     }

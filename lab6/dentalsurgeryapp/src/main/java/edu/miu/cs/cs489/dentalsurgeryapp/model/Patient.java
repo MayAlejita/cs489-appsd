@@ -23,10 +23,9 @@ public class Patient {
     private String phoneNumber;
     private String email;
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "address_id", unique = true, nullable = true)
+    @JoinColumn(name = "address_id", unique = false, nullable = true)
     private Address address;
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "patient_id", unique = false, nullable = true)
+    @OneToMany(mappedBy = "patient", fetch = FetchType.EAGER)
     private List<Appointment> appointments;
 
     public Patient(Integer patientId, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber, String email, Address address) {

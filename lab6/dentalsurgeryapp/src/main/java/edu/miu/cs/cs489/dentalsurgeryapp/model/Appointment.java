@@ -17,4 +17,18 @@ public class Appointment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer appointmentId;
     private LocalDateTime dateAppointment;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "patient_id", unique = false, nullable = true)
+    private Patient patient;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "dentist_id", unique = false, nullable = true)
+    private Dentist dentist;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "surgery_id", unique = false, nullable = true)
+    private Surgery surgery;
+
+    public Appointment(Integer appointmentId, LocalDateTime dateAppointment) {
+        this.appointmentId = appointmentId;
+        this.dateAppointment = dateAppointment;
+    }
 }

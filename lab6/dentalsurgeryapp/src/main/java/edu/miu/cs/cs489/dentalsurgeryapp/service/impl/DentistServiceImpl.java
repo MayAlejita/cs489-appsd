@@ -19,6 +19,11 @@ public class DentistServiceImpl implements DentistService {
     }
 
     @Override
+    public Dentist getDentistById(Integer dentistId) {
+        return dentistRepository.findById(dentistId).orElse(null);
+    }
+
+    @Override
     public Dentist updateDentist(Dentist dentist) {
         return dentistRepository.save(dentist);
     }

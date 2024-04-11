@@ -20,6 +20,11 @@ public class AddressServiceImpl implements AddressService {
     }
 
     @Override
+    public Address getAddressByID(Integer addressId) {
+        return addressRepository.findById(addressId).orElse(null);
+    }
+
+    @Override
     public Address updateAddress(Address address) {
         return addressRepository.save(address);
     }

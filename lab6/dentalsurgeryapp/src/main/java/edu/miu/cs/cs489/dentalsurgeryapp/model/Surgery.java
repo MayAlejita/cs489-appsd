@@ -19,10 +19,9 @@ public class Surgery {
     private String name;
     private String phoneNumber;
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "address_id", unique = true, nullable = true)
+    @JoinColumn(name = "address_id", unique = false, nullable = true)
     private Address address;
-    @OneToMany
-    @JoinColumn(name = "surgery_id", unique = false, nullable = true)
+    @OneToMany(mappedBy = "surgery", fetch = FetchType.EAGER)
     private List<Appointment> appointments;
 
     public Surgery(Integer surgeryId, String name, String phoneNumber, Address address) {

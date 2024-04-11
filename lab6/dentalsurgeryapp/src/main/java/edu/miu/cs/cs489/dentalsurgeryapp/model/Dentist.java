@@ -20,8 +20,7 @@ public class Dentist {
     private String lastName;
     private String phoneNumber;
     private String email;
-    @OneToMany
-    @JoinColumn(name = "dentist_id", unique = false, nullable = true)
+    @OneToMany(mappedBy = "dentist", fetch = FetchType.EAGER)
     private List<Appointment> appointments;
 
     public Dentist(Integer dentistId, String firstName, String lastName, String phoneNumber, String email) {
