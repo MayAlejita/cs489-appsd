@@ -4,6 +4,7 @@ import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientRequest;
 import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.PatientNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.PatientService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +31,7 @@ public class PatientController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<PatientResponse> registerPatient(@RequestBody PatientRequest patient) {
+    public ResponseEntity<PatientResponse> registerPatient(@RequestBody @Valid PatientRequest patient) {
         return new ResponseEntity<>(patientService.addNewPatient(patient), HttpStatus.CREATED);
     }
 

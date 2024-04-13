@@ -9,6 +9,7 @@ import edu.miu.cs.cs489.dentalsurgeryapp.model.Patient;
 import edu.miu.cs.cs489.dentalsurgeryapp.repository.PatientRepository;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -118,7 +119,7 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public List<PatientResponse> getAllPatient() {
-        return patientRepository.findAll()
+        return patientRepository.findAll(Sort.by("lastname"))
                 .stream()
                 .map(p -> new PatientResponse(
                         p.getPatientId(),
@@ -135,7 +136,6 @@ public class PatientServiceImpl implements PatientService {
                                 p.getAddress().getZipCode()
                         ) : null
                 ))
-                .sorted(Comparator.comparing(PatientResponse::lastName))
                 .toList();
     }
 
