@@ -1,6 +1,6 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.controller;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment.AppointmentResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AppointmentResponse;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.AppointmentNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.AppointmentService;
 import org.springframework.http.ResponseEntity;

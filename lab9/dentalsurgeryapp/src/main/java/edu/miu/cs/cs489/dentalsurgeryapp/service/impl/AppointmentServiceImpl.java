@@ -1,9 +1,9 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.service.impl;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment.AppointmentResponse;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment.DentistResponse;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment.SurgeryResponse;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse2;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AppointmentResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.DentistResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.SurgeryResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.PatientResponse2;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.AppointmentNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.model.Appointment;
 import edu.miu.cs.cs489.dentalsurgeryapp.repository.AppointmentRepository;

@@ -1,6 +1,5 @@
-package edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment;
+package edu.miu.cs.cs489.dentalsurgeryapp.dto.response;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse2;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;

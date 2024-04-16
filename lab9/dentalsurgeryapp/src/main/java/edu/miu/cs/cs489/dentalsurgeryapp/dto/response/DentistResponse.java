@@ -1,4 +1,4 @@
-package edu.miu.cs.cs489.dentalsurgeryapp.dto.appointment;
+package edu.miu.cs.cs489.dentalsurgeryapp.dto.response;
 
 public record DentistResponse(
         Integer dentistId,

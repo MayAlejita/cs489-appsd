@@ -1,13 +1,14 @@
-package edu.miu.cs.cs489.dentalsurgeryapp.dto.patient;
+package edu.miu.cs.cs489.dentalsurgeryapp.dto.response;
 
 import java.time.LocalDate;
 
-public record PatientResponse2(
+public record PatientResponse(
         Integer patientId,
         String firstName,
         String lastName,
         LocalDate dateOfBirth,
         String phoneNumber,
-        String email
+        String email,
+        AddressResponse address
 ) {
 }

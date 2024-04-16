@@ -1,6 +1,5 @@
-package edu.miu.cs.cs489.dentalsurgeryapp.dto.patient;
+package edu.miu.cs.cs489.dentalsurgeryapp.dto.request;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.address.AddressRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 

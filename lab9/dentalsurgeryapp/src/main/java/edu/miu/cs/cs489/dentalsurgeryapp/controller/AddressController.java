@@ -1,6 +1,6 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.controller;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.address.AddressResponse2;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AddressResponse2;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.AddressService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

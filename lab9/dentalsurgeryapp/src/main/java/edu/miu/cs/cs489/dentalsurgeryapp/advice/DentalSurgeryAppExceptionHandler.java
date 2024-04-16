@@ -2,6 +2,7 @@ package edu.miu.cs.cs489.dentalsurgeryapp.advice;
 
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.AppointmentNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.PatientNotFoundException;
+import edu.miu.cs.cs489.dentalsurgeryapp.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -27,6 +28,14 @@ public class DentalSurgeryAppExceptionHandler {
     public Map<String, String> handlePatientNotFoundException(AppointmentNotFoundException appointmentNotFoundException) {
         Map<String, String> errorMessage = new HashMap<>();
         errorMessage.put("errorMessage", appointmentNotFoundException.getMessage());
+        return errorMessage;
+    }
+
+    @ExceptionHandler(UserNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public Map<String, String> handleUserNotFoundException(UserNotFoundException userNotFoundException) {
+        Map<String, String> errorMessage = new HashMap<>();
+        errorMessage.put("errorMessage", userNotFoundException.getMessage());
         return errorMessage;
     }
 

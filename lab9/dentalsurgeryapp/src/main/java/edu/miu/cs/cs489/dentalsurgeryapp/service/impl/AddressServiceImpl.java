@@ -1,15 +1,13 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.service.impl;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.address.AddressResponse2;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse2;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AddressResponse2;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.PatientResponse2;
 import edu.miu.cs.cs489.dentalsurgeryapp.model.Address;
 import edu.miu.cs.cs489.dentalsurgeryapp.repository.AddressRepository;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.AddressService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 
 @Service

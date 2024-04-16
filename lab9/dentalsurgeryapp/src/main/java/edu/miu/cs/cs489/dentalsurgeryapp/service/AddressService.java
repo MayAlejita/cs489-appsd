@@ -1,6 +1,6 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.service;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.address.AddressResponse2;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AddressResponse2;
 import edu.miu.cs.cs489.dentalsurgeryapp.model.Address;
 
 import java.util.List;

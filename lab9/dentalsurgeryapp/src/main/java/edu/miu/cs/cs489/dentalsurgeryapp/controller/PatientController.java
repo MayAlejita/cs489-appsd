@@ -1,7 +1,7 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.controller;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientRequest;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.request.PatientRequest;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.PatientResponse;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.PatientNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.PatientService;
 import jakarta.validation.Valid;

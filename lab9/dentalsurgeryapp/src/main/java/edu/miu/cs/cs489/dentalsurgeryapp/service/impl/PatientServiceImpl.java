@@ -1,18 +1,16 @@
 package edu.miu.cs.cs489.dentalsurgeryapp.service.impl;
 
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.address.AddressResponse;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientRequest;
-import edu.miu.cs.cs489.dentalsurgeryapp.dto.patient.PatientResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.AddressResponse;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.request.PatientRequest;
+import edu.miu.cs.cs489.dentalsurgeryapp.dto.response.PatientResponse;
 import edu.miu.cs.cs489.dentalsurgeryapp.exception.PatientNotFoundException;
 import edu.miu.cs.cs489.dentalsurgeryapp.model.Address;
 import edu.miu.cs.cs489.dentalsurgeryapp.model.Patient;
 import edu.miu.cs.cs489.dentalsurgeryapp.repository.PatientRepository;
 import edu.miu.cs.cs489.dentalsurgeryapp.service.PatientService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 
 @Service
