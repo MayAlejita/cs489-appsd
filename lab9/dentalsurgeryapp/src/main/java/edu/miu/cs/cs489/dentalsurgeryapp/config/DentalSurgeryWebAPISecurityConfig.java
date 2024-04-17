@@ -38,7 +38,7 @@ public class DentalSurgeryWebAPISecurityConfig {
                                     .requestMatchers("/adsweb/api/v1/public/auth/**").permitAll()
                                     .requestMatchers("/adsweb/api/v1/user/**").permitAll()
                                     .requestMatchers("/adsweb/api/v1/appointment/**").authenticated()
-                                    .requestMatchers("/adsweb/api/v1/address/**").authenticated()
+                                    .requestMatchers("/adsweb/api/v1/address/**").hasRole("ADMIN")
                                     .requestMatchers("/adsweb/api/v1/patient/**").authenticated();
                         }
                 )
